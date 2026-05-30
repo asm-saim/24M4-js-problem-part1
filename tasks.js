@@ -16,20 +16,50 @@ console.log(res);
 // sample-input: numbers = [5,6,11,12,98, 5]
 
 // find: 5
-
 // output: 2
-
 
 // sample-input:
 
 // numbers = [5,6,11,12,98, 5]
 
 // find: 25
-
 // output: 0
+
+
+function countDuplicate(input, find) {
+    let count = 0;
+    for (let i of input) {
+        if (i === find) {
+            count++;
+        }
+    }
+    return count;
+}
+const numbers = [5, 6, 11, 12, 98, 5];
+const result = countDuplicate(numbers, 11);
+console.log(result);
+
+
 
 // Task-3:
 // Write a function to count the number of vowels in a string.
+function vowelHunt(search) {
+let count = 0;
+const vowel = ['a', 'e', 'i', 'o', 'u'];
+const allLower=search.toLowerCase();
+
+ for(let str of allLower)
+ {
+    if(vowel.includes(str))
+    {
+        count++;
+    }
+ }
+ return count;
+
+}
+const output = vowelHunt('orange');
+console.log(output);
 
 // Task-4:
 // Write a function to find the longest word in a given string.
