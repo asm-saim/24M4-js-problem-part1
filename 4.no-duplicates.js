@@ -1,3 +1,5 @@
+//No duplicates in an array using function.
+
 const names=['Safiq', 'Wasi','Mikail', 'Safiq', 'Hamid', 'Wasi'];
 const numbers=[2,44,3,22,55,3, 77, 2, 77];
 let unique=[];
