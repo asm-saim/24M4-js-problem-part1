@@ -84,6 +84,25 @@ return len;
 const finalOutput=longestStr("I am learning Programming to become a programmer");
 console.log(finalOutput);
 
+//for shortest:
+function findShortestWord(sentence) {
+    let words = sentence.split(' ');
+    let shortest = words[0]; // start with first word
+
+    for(let word of words) {
+        if(word.length < shortest.length) {
+            shortest = word;
+        }
+    }
+    return shortest;
+}
+
+console.log(findShortestWord("I love JavaScript programming"));
+
+// Finding longest → start with '' empty string 
+// Finding shortest → start with words[0] first word
+
+
 // Task-5:
 // Generate a random number between 10 to 20.
 
