@@ -2,12 +2,12 @@
 // Task-1:
 // Write a function to convert temperature from Celsius to Fahrenheit.
 
-function celToFer(input){
- const toFahrenheit= input * 32;
- const output=toFahrenheit+" fahrenheit"
- return output;
+function celToFer(input) {
+    const toFahrenheit = input * 32;
+    const output = toFahrenheit + " fahrenheit"
+    return output;
 }
-const res=celToFer(5);
+const res = celToFer(5);
 console.log(res);
 
 // Task-2:
@@ -40,3 +40,13 @@ console.log(res);
 
 // Task-5:
 // Generate a random number between 10 to 20.
+
+// const ran=Math.random(20);
+// const intRandom=ran*20;
+// const ranResult=Math.round(intRandom);
+// console.log(ranResult);
+
+function ranNumber(max, min) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+console.log(ranNumber(20, 10));
