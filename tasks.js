@@ -68,6 +68,22 @@ console.log(output);
 
 // sample-output: Programming
 
+function longestStr(input){
+    let len='';
+    const words=input.split(' ');
+    // console.log(words);
+for(let word of words)
+{
+    if(word.length>len.length)
+    {
+        len=word;
+    }
+}
+return len;
+}
+const finalOutput=longestStr("I am learning Programming to become a programmer");
+console.log(finalOutput);
+
 // Task-5:
 // Generate a random number between 10 to 20.
 
