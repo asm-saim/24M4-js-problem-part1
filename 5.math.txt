@@ -114,3 +114,6 @@ Math.ceil()   -> higher integer
 Math.abs()    -> absolute value
 Math.random() -> random number
 Math.PI       -> value of π
+
+//Math.abs() = always make it positive 
+
