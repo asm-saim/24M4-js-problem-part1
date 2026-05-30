@@ -1,0 +1,75 @@
+========================
+JavaScript Swap Values
+========================
+
+# Swapping
+Swapping means exchanging the values of two variables.
+
+# Method 1: Temporary Variable (temp)
+
+Example:
+let a = 5;
+let b = 7;
+
+console.log(a, b); // 5 7
+
+let temp = a;
+a = b;
+b = temp;
+
+console.log(a, b); // 7 5
+
+# How It Works
+1. Store a in temp
+2. Put b into a
+3. Put temp into b
+
+Result:
+a = 7
+b = 5
+
+# Method 2: Destructuring Assignment
+
+Example:
+let x = 10;
+let y = 20;
+
+[x, y] = [y, x];
+
+console.log(x, y); // 20 10
+
+# How It Works
+Before:
+x = 10
+y = 20
+
+After:
+x = 20
+y = 10
+
+# Destructuring
+Destructuring allows extracting or assigning multiple values at once.
+
+Example:
+const numbers = [100, 200];
+
+const [first, second] = numbers;
+
+console.log(first);  // 100
+console.log(second); // 200
+
+# Comparison
+
+Temp Method:
+- Easy to understand
+- Works in all languages
+
+Destructuring Method:
+- Shorter syntax
+- Modern JavaScript approach
+
+# Best Practice
+Prefer:
+[x, y] = [y, x];
+
+Because it is clean, short, and commonly used in modern JavaScript.

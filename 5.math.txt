@@ -1,0 +1,116 @@
+========================
+JavaScript Math Object
+========================
+
+# Math Object
+JavaScript provides the built-in Math object for mathematical calculations.
+
+# Math.min()
+Returns the smallest number.
+
+Example:
+const num_min = Math.min(22, 45, 22, 5, 77, 88);
+console.log(num_min);
+
+Output:
+5
+
+# Math.max()
+Returns the largest number.
+
+Example:
+const num_max = Math.max(57, 88, 33, 14, 77);
+console.log(num_max);
+
+Output:
+88
+
+# Math.round()
+Rounds to the nearest integer.
+
+Example:
+console.log(Math.round(2.55));
+
+Output:
+3
+
+# Math.floor()
+Rounds down to the lower integer.
+
+Example:
+console.log(Math.floor(2.95));
+
+Output:
+2
+
+# Math.ceil()
+Rounds up to the higher integer.
+
+Example:
+console.log(Math.ceil(2.11));
+
+Output:
+3
+
+# Math.PI
+Returns the value of π (pi).
+
+Example:
+console.log(Math.PI);
+
+Output:
+3.141592653589793
+
+# Math.abs()
+Returns the absolute (positive) difference/value.
+
+Example:
+console.log(Math.abs(50 - 55));
+
+Output:
+5
+
+# Math.random()
+Generates a random number between:
+0 (inclusive) and 1 (exclusive)
+
+Example:
+console.log(Math.random());
+
+Output:
+0.573829... (random)
+
+# Random Integer (0–10)
+
+Example:
+const ran = Math.random() * 10;
+const final_random = Math.round(ran);
+
+console.log(final_random);
+
+Possible Output:
+0, 1, 2, 3, ..., 10
+
+# Useful Random Formulas
+
+Random number (0-1):
+Math.random()
+
+Random integer (0-10):
+Math.round(Math.random() * 10)
+
+Random integer (1-10):
+Math.floor(Math.random() * 10) + 1
+
+Random integer (1-100):
+Math.floor(Math.random() * 100) + 1
+
+# Common Math Methods
+Math.min()    -> smallest value
+Math.max()    -> largest value
+Math.round()  -> nearest integer
+Math.floor()  -> lower integer
+Math.ceil()   -> higher integer
+Math.abs()    -> absolute value
+Math.random() -> random number
+Math.PI       -> value of π
